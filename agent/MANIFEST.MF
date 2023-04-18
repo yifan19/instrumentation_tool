@@ -1,0 +1,4 @@
+Manifest-Version: 1.0 
+Premain-Class: org.mybyteman.SimpleAgent
+Class-Path: javassist.jar  disruptor-4.0.0.RC1.jar
+

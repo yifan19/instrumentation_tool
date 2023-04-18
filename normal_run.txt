@@ -1,0 +1,1198 @@
+Loaded disassembler from /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/hsdis-amd64.so
+Decoding compiled method 0x00007fd84d07a2d0:
+Code:
+Argument 0 is unknown.RIP: 0x7fd84d07a440 Code size: 0x000001e8
+[Disassembling for mach='amd64']
+[Entry Point]
+  # {method} {0x00007fd85599b4e0} 'compareAndSwapLong' '(Ljava/lang/Object;JJJ)Z' in 'sun/misc/Unsafe'
+  # this:     rsi:rsi   = 'sun/misc/Unsafe'
+  # parm0:    rdx:rdx   = 'java/lang/Object'
+  # parm1:    rcx:rcx   = long
+  # parm2:    r8:r8     = long
+  # parm3:    r9:r9     = long
+  #           [sp+0x50]  (sp of caller)
+  0x00007fd84d07a440: mov     0x8(%rsi),%r10d
+  0x00007fd84d07a444: shl     $0x3,%r10
+  0x00007fd84d07a448: cmp     %r10,%rax
+  0x00007fd84d07a44b: je      0x7fd84d07a458
+  0x00007fd84d07a451: jmpq    0x7fd84d045ba0    ;   {runtime_call}
+  0x00007fd84d07a456: nop
+[Verified Entry Point]
+  0x00007fd84d07a458: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007fd84d07a45f: push    %rbp
+  0x00007fd84d07a460: mov     %rsp,%rbp
+  0x00007fd84d07a463: sub     $0x40,%rsp
+  0x00007fd84d07a467: mov     %rdx,0x8(%rsp)
+  0x00007fd84d07a46c: cmp     $0x0,%rdx
+  0x00007fd84d07a470: lea     0x8(%rsp),%rdx
+  0x00007fd84d07a475: cmove   0x8(%rsp),%rdx
+  0x00007fd84d07a47b: mov     %rsi,(%rsp)
+  0x00007fd84d07a47f: cmp     $0x0,%rsi
+  0x00007fd84d07a483: lea     (%rsp),%rsi
+  0x00007fd84d07a487: cmove   (%rsp),%rsi       ; OopMap{[8]=Oop [0]=Oop off=76}
+  0x00007fd84d07a48c: movabs  $0x7fd84d07a48c,%r10  ;   {section_word}
+  0x00007fd84d07a496: mov     %r10,0x248(%r15)
+  0x00007fd84d07a49d: mov     %rsp,0x240(%r15)
+  0x00007fd84d07a4a4: cmpb    $0x0,0xa4c6801(%rip)  ;   {external_word}
+  0x00007fd84d07a4ab: je      0x7fd84d07a4ef
+  0x00007fd84d07a4b1: push    %rsi
+  0x00007fd84d07a4b2: push    %rdx
+  0x00007fd84d07a4b3: push    %rcx
+  0x00007fd84d07a4b4: push    %r8
+  0x00007fd84d07a4b6: push    %r9
+  0x00007fd84d07a4b8: movabs  $0x7fd85599b4e0,%rsi  ;   {metadata({method} {0x00007fd85599b4e0} 'compareAndSwapLong' '(Ljava/lang/Object;JJJ)Z' in 'sun/misc/Unsafe')}
+  0x00007fd84d07a4c2: mov     %r15,%rdi
+  0x00007fd84d07a4c5: test    $0xf,%esp
+  0x00007fd84d07a4cb: je      0x7fd84d07a4e3
+  0x00007fd84d07a4d1: sub     $0x8,%rsp
+  0x00007fd84d07a4d5: callq   0x7fd8571918b0    ;   {runtime_call}
+  0x00007fd84d07a4da: add     $0x8,%rsp
+  0x00007fd84d07a4de: jmpq    0x7fd84d07a4e8
+  0x00007fd84d07a4e3: callq   0x7fd8571918b0    ;   {runtime_call}
+  0x00007fd84d07a4e8: pop     %r9
+  0x00007fd84d07a4ea: pop     %r8
+  0x00007fd84d07a4ec: pop     %rcx
+  0x00007fd84d07a4ed: pop     %rdx
+  0x00007fd84d07a4ee: pop     %rsi
+  0x00007fd84d07a4ef: lea     0x260(%r15),%rdi
+  0x00007fd84d07a4f6: movl    $0x4,0x2d8(%r15)
+  0x00007fd84d07a501: callq   0x7fd85726d970    ;   {runtime_call}
+  0x00007fd84d07a506: vzeroupper
+  0x00007fd84d07a509: and     $0xff,%eax
+  0x00007fd84d07a50f: setne   %al
+  0x00007fd84d07a512: movl    $0x5,0x2d8(%r15)
+  0x00007fd84d07a51d: cmpl    $0x0,0xa4d3ba5(%rip)  ;   {external_word}
+  0x00007fd84d07a527: jne     0x7fd84d07a53b
+  0x00007fd84d07a52d: cmpl    $0x0,0x30(%r15)
+  0x00007fd84d07a535: je      0x7fd84d07a55c
+  0x00007fd84d07a53b: mov     %rax,0xfffffffffffffff8(%rbp)
+  0x00007fd84d07a53f: mov     %r15,%rdi
+  0x00007fd84d07a542: mov     %rsp,%r12
+  0x00007fd84d07a545: sub     $0x0,%rsp
+  0x00007fd84d07a549: and     $0xfffffffffffffff0,%rsp
+  0x00007fd84d07a54d: callq   0x7fd85723bda0    ;   {runtime_call}
+  0x00007fd84d07a552: mov     %r12,%rsp
+  0x00007fd84d07a555: xor     %r12,%r12
+  0x00007fd84d07a558: mov     0xfffffffffffffff8(%rbp),%rax
+  0x00007fd84d07a55c: movl    $0x8,0x2d8(%r15)
+  0x00007fd84d07a567: cmpl    $0x1,0x304(%r15)
+  0x00007fd84d07a572: je      0x7fd84d07a602
+  0x00007fd84d07a578: cmpb    $0x0,0xa4c672d(%rip)  ;   {external_word}
+  0x00007fd84d07a57f: je      0x7fd84d07a5bd
+  0x00007fd84d07a585: mov     %rax,0xfffffffffffffff8(%rbp)
+  0x00007fd84d07a589: movabs  $0x7fd85599b4e0,%rsi  ;   {metadata({method} {0x00007fd85599b4e0} 'compareAndSwapLong' '(Ljava/lang/Object;JJJ)Z' in 'sun/misc/Unsafe')}
+  0x00007fd84d07a593: mov     %r15,%rdi
+  0x00007fd84d07a596: test    $0xf,%esp
+  0x00007fd84d07a59c: je      0x7fd84d07a5b4
+  0x00007fd84d07a5a2: sub     $0x8,%rsp
+  0x00007fd84d07a5a6: callq   0x7fd8571918d0    ;   {runtime_call}
+  0x00007fd84d07a5ab: add     $0x8,%rsp
+  0x00007fd84d07a5af: jmpq    0x7fd84d07a5b9
+  0x00007fd84d07a5b4: callq   0x7fd8571918d0    ;   {runtime_call}
+  0x00007fd84d07a5b9: mov     0xfffffffffffffff8(%rbp),%rax
+  0x00007fd84d07a5bd: movabs  $0x0,%r10
+  0x00007fd84d07a5c7: mov     %r10,0x240(%r15)
+  0x00007fd84d07a5ce: movabs  $0x0,%r10
+  0x00007fd84d07a5d8: mov     %r10,0x248(%r15)
+  0x00007fd84d07a5df: mov     0x38(%r15),%rcx
+  0x00007fd84d07a5e3: movl    $0x0,0x100(%rcx)
+  0x00007fd84d07a5ed: leave
+  0x00007fd84d07a5ee: cmpq    $0x0,0x8(%r15)
+  0x00007fd84d07a5f6: jne     0x7fd84d07a5fd
+  0x00007fd84d07a5fc: retq
+  0x00007fd84d07a5fd: jmpq    0x7fd84d000420    ;   {runtime_call}
+  0x00007fd84d07a602: mov     %rax,0xfffffffffffffff8(%rbp)
+  0x00007fd84d07a606: mov     %rsp,%r12
+  0x00007fd84d07a609: sub     $0x0,%rsp
+  0x00007fd84d07a60d: and     $0xfffffffffffffff0,%rsp
+  0x00007fd84d07a611: callq   0x7fd857191de0    ;   {runtime_call}
+  0x00007fd84d07a616: mov     %r12,%rsp
+  0x00007fd84d07a619: xor     %r12,%r12
+  0x00007fd84d07a61c: mov     0xfffffffffffffff8(%rbp),%rax
+  0x00007fd84d07a620: jmpq    0x7fd84d07a578
+  0x00007fd84d07a625: hlt
+  0x00007fd84d07a626: hlt
+  0x00007fd84d07a627: hlt
+     86    1     n       sun.misc.Unsafe::compareAndSwapLong (native)   
+     86    2    b        java.util.concurrent.atomic.AtomicLong::get (5 bytes)
+Decoding compiled method 0x00007fd84d07d290:
+Code:
+Argument 0 is unknown.RIP: 0x7fd84d07d3e0 Code size: 0x00000058
+[Entry Point]
+[Constants]
+  # {method} {0x00007fd855a7fe00} 'get' '()J' in 'java/util/concurrent/atomic/AtomicLong'
+  #           [sp+0x20]  (sp of caller)
+  0x00007fd84d07d3e0: mov     0x8(%rsi),%r10d
+  0x00007fd84d07d3e4: shl     $0x3,%r10
+  0x00007fd84d07d3e8: cmp     %r10,%rax
+  0x00007fd84d07d3eb: jne     0x7fd84d045ba0    ;   {runtime_call}
+  0x00007fd84d07d3f1: nop
+  0x00007fd84d07d3f4: nopl    0x0(%rax,%rax)
+  0x00007fd84d07d3fc: nop
+[Verified Entry Point]
+  0x00007fd84d07d400: sub     $0x18,%rsp
+  0x00007fd84d07d407: mov     %rbp,0x10(%rsp)   ;*synchronization entry
+                                                ; - java.util.concurrent.atomic.AtomicLong::get@-1 (line 105)
+
+  0x00007fd84d07d40c: mov     0x10(%rsi),%rax   ;*getfield value
+                                                ; - java.util.concurrent.atomic.AtomicLong::get@1 (line 105)
+
+  0x00007fd84d07d410: add     $0x10,%rsp
+  0x00007fd84d07d414: pop     %rbp
+  0x00007fd84d07d415: test    %eax,0xa770be5(%rip)  ;   {poll_return}
+  0x00007fd84d07d41b: retq
+  0x00007fd84d07d41c: hlt
+  0x00007fd84d07d41d: hlt
+  0x00007fd84d07d41e: hlt
+  0x00007fd84d07d41f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007fd84d07d420: jmpq    0x7fd84d06d260    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007fd84d07d425: callq   0x7fd84d07d42a
+  0x00007fd84d07d42a: subq    $0x5,(%rsp)
+  0x00007fd84d07d42f: jmpq    0x7fd84d047240    ;   {runtime_call}
+  0x00007fd84d07d434: hlt
+  0x00007fd84d07d435: hlt
+  0x00007fd84d07d436: hlt
+  0x00007fd84d07d437: hlt
+     95    3    b        java.util.concurrent.atomic.AtomicLong::compareAndSet (13 bytes)
+Decoding compiled method 0x00007fd84d07bb50:
+Code:
+Argument 0 is unknown.RIP: 0x7fd84d07bca0 Code size: 0x00000078
+[Entry Point]
+[Constants]
+  # {method} {0x00007fd855a80078} 'compareAndSet' '(JJ)Z' in 'java/util/concurrent/atomic/AtomicLong'
+  # this:     rsi:rsi   = 'java/util/concurrent/atomic/AtomicLong'
+  # parm0:    rdx:rdx   = long
+  # parm1:    rcx:rcx   = long
+  #           [sp+0x20]  (sp of caller)
+  0x00007fd84d07bca0: mov     0x8(%rsi),%r10d
+  0x00007fd84d07bca4: shl     $0x3,%r10
+  0x00007fd84d07bca8: cmp     %r10,%rax
+  0x00007fd84d07bcab: jne     0x7fd84d045ba0    ;   {runtime_call}
+  0x00007fd84d07bcb1: nop
+  0x00007fd84d07bcb4: nopl    0x0(%rax,%rax)
+  0x00007fd84d07bcbc: nop
+[Verified Entry Point]
+  0x00007fd84d07bcc0: sub     $0x18,%rsp
+  0x00007fd84d07bcc7: mov     %rbp,0x10(%rsp)
+  0x00007fd84d07bccc: mov     %rdx,%rax
+  0x00007fd84d07bccf: cmpxchg %rcx,0x10(%rsi)
+  0x00007fd84d07bcd4: sete    %r11l
+  0x00007fd84d07bcd8: movzbl  %r11l,%r11d       ;*invokevirtual compareAndSwapLong
+                                                ; - java.util.concurrent.atomic.AtomicLong::compareAndSet@9 (line 147)
+
+  0x00007fd84d07bcdc: mov     %r11d,%eax
+  0x00007fd84d07bcdf: add     $0x10,%rsp
+  0x00007fd84d07bce3: pop     %rbp
+  0x00007fd84d07bce4: test    %eax,0xa772316(%rip)  ;   {poll_return}
+  0x00007fd84d07bcea: retq
+  0x00007fd84d07bceb: hlt
+  0x00007fd84d07bcec: hlt
+  0x00007fd84d07bced: hlt
+  0x00007fd84d07bcee: hlt
+  0x00007fd84d07bcef: hlt
+  0x00007fd84d07bcf0: hlt
+  0x00007fd84d07bcf1: hlt
+  0x00007fd84d07bcf2: hlt
+  0x00007fd84d07bcf3: hlt
+  0x00007fd84d07bcf4: hlt
+  0x00007fd84d07bcf5: hlt
+  0x00007fd84d07bcf6: hlt
+  0x00007fd84d07bcf7: hlt
+  0x00007fd84d07bcf8: hlt
+  0x00007fd84d07bcf9: hlt
+  0x00007fd84d07bcfa: hlt
+  0x00007fd84d07bcfb: hlt
+  0x00007fd84d07bcfc: hlt
+  0x00007fd84d07bcfd: hlt
+  0x00007fd84d07bcfe: hlt
+  0x00007fd84d07bcff: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007fd84d07bd00: jmpq    0x7fd84d06d260    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007fd84d07bd05: callq   0x7fd84d07bd0a
+  0x00007fd84d07bd0a: subq    $0x5,(%rsp)
+  0x00007fd84d07bd0f: jmpq    0x7fd84d047240    ;   {runtime_call}
+  0x00007fd84d07bd14: hlt
+  0x00007fd84d07bd15: hlt
+  0x00007fd84d07bd16: hlt
+  0x00007fd84d07bd17: hlt
+    104    4    b        java.util.Random::nextInt (7 bytes)
+Decoding compiled method 0x00007fd84d07ced0:
+Code:
+Argument 0 is unknown.RIP: 0x7fd84d07d020 Code size: 0x000000d8
+[Entry Point]
+[Constants]
+  # {method} {0x00007fd855b8a918} 'nextInt' '()I' in 'java/util/Random'
+  #           [sp+0x30]  (sp of caller)
+  0x00007fd84d07d020: mov     0x8(%rsi),%r10d
+  0x00007fd84d07d024: shl     $0x3,%r10
+  0x00007fd84d07d028: cmp     %r10,%rax
+  0x00007fd84d07d02b: jne     0x7fd84d045ba0    ;   {runtime_call}
+  0x00007fd84d07d031: nop
+  0x00007fd84d07d034: nopl    0x0(%rax,%rax)
+  0x00007fd84d07d03c: nop
+[Verified Entry Point]
+  0x00007fd84d07d040: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007fd84d07d047: push    %rbp
+  0x00007fd84d07d048: sub     $0x20,%rsp        ;*synchronization entry
+                                                ; - java.util.Random::nextInt@-1 (line 329)
+
+  0x00007fd84d07d04c: mov     0x18(%rsi),%r10d  ;*getfield seed
+                                                ; - java.util.Random::next@1 (line 200)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+
+  0x00007fd84d07d050: mov     0x10(%r10),%rax   ;*invokevirtual compareAndSwapLong
+                                                ; - java.util.concurrent.atomic.AtomicLong::compareAndSet@9 (line 147)
+                                                ; - java.util.Random::next@32 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; implicit exception: dispatches to 0x00007fd84d07d0b5
+  0x00007fd84d07d054: movabs  $0xffffffffffff,%r11
+  0x00007fd84d07d05e: movabs  $0x5deece66d,%r8
+  0x00007fd84d07d068: mov     %rax,%r9
+  0x00007fd84d07d06b: imulq   %r8,%r9
+  0x00007fd84d07d06f: add     $0xb,%r9          ;*ladd
+                                                ; - java.util.Random::next@20 (line 203)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+
+  0x00007fd84d07d073: mov     %r9,%r8
+  0x00007fd84d07d076: and     %r11,%r8          ;*land
+                                                ; - java.util.Random::next@24 (line 203)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+
+  0x00007fd84d07d079: cmpxchg %r8,0x10(%r10)
+  0x00007fd84d07d07e: sete    %bpl
+  0x00007fd84d07d082: movzbl  %bpl,%ebp         ;*invokevirtual compareAndSwapLong
+                                                ; - java.util.concurrent.atomic.AtomicLong::compareAndSet@9 (line 147)
+                                                ; - java.util.Random::next@32 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+
+  0x00007fd84d07d086: test    %ebp,%ebp
+  0x00007fd84d07d088: je      0x7fd84d07d09d    ;*ifeq
+                                                ; - java.util.Random::next@35 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+
+  0x00007fd84d07d08a: shr     $0x10,%r9
+  0x00007fd84d07d08e: mov     %r9d,%eax         ;*l2i  ; - java.util.Random::next@45 (line 205)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+
+  0x00007fd84d07d091: add     $0x20,%rsp
+  0x00007fd84d07d095: pop     %rbp
+  0x00007fd84d07d096: test    %eax,0xa770f64(%rip)  ;   {poll_return}
+  0x00007fd84d07d09c: retq
+  0x00007fd84d07d09d: mov     $0xffffff65,%esi
+  0x00007fd84d07d0a2: mov     %r10d,(%rsp)
+  0x00007fd84d07d0a6: mov     %r8,0x8(%rsp)
+  0x00007fd84d07d0ab: callq   0x7fd84d0453e0    ; OopMap{[0]=NarrowOop off=144}
+                                                ;*ifeq
+                                                ; - java.util.Random::next@35 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ;   {runtime_call}
+  0x00007fd84d07d0b0: callq   0x7fd8570e4dc0    ;*ifeq
+                                                ; - java.util.Random::next@35 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ;   {runtime_call}
+  0x00007fd84d07d0b5: mov     $0xfffffff6,%esi
+  0x00007fd84d07d0ba: nop
+  0x00007fd84d07d0bb: callq   0x7fd84d0453e0    ; OopMap{off=160}
+                                                ;*invokevirtual get
+                                                ; - java.util.Random::next@8 (line 202)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ;   {runtime_call}
+  0x00007fd84d07d0c0: callq   0x7fd8570e4dc0    ;*invokevirtual get
+                                                ; - java.util.Random::next@8 (line 202)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ;   {runtime_call}
+  0x00007fd84d07d0c5: hlt
+  0x00007fd84d07d0c6: hlt
+  0x00007fd84d07d0c7: hlt
+  0x00007fd84d07d0c8: hlt
+  0x00007fd84d07d0c9: hlt
+  0x00007fd84d07d0ca: hlt
+  0x00007fd84d07d0cb: hlt
+  0x00007fd84d07d0cc: hlt
+  0x00007fd84d07d0cd: hlt
+  0x00007fd84d07d0ce: hlt
+  0x00007fd84d07d0cf: hlt
+  0x00007fd84d07d0d0: hlt
+  0x00007fd84d07d0d1: hlt
+  0x00007fd84d07d0d2: hlt
+  0x00007fd84d07d0d3: hlt
+  0x00007fd84d07d0d4: hlt
+  0x00007fd84d07d0d5: hlt
+  0x00007fd84d07d0d6: hlt
+  0x00007fd84d07d0d7: hlt
+  0x00007fd84d07d0d8: hlt
+  0x00007fd84d07d0d9: hlt
+  0x00007fd84d07d0da: hlt
+  0x00007fd84d07d0db: hlt
+  0x00007fd84d07d0dc: hlt
+  0x00007fd84d07d0dd: hlt
+  0x00007fd84d07d0de: hlt
+  0x00007fd84d07d0df: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007fd84d07d0e0: jmpq    0x7fd84d06d260    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007fd84d07d0e5: callq   0x7fd84d07d0ea
+  0x00007fd84d07d0ea: subq    $0x5,(%rsp)
+  0x00007fd84d07d0ef: jmpq    0x7fd84d047240    ;   {runtime_call}
+  0x00007fd84d07d0f4: hlt
+  0x00007fd84d07d0f5: hlt
+  0x00007fd84d07d0f6: hlt
+  0x00007fd84d07d0f7: hlt
+    112    5    b        java.util.Random::next (47 bytes)
+Decoding compiled method 0x00007fd84d07cb10:
+Code:
+Argument 0 is unknown.RIP: 0x7fd84d07cc60 Code size: 0x000000d8
+[Entry Point]
+[Constants]
+  # {method} {0x00007fd855b8a510} 'next' '(I)I' in 'java/util/Random'
+  # this:     rsi:rsi   = 'java/util/Random'
+  # parm0:    rdx       = int
+  #           [sp+0x30]  (sp of caller)
+  0x00007fd84d07cc60: mov     0x8(%rsi),%r10d
+  0x00007fd84d07cc64: shl     $0x3,%r10
+  0x00007fd84d07cc68: cmp     %r10,%rax
+  0x00007fd84d07cc6b: jne     0x7fd84d045ba0    ;   {runtime_call}
+  0x00007fd84d07cc71: nop
+  0x00007fd84d07cc74: nopl    0x0(%rax,%rax)
+  0x00007fd84d07cc7c: nop
+[Verified Entry Point]
+  0x00007fd84d07cc80: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007fd84d07cc87: push    %rbp
+  0x00007fd84d07cc88: sub     $0x20,%rsp        ;*synchronization entry
+                                                ; - java.util.Random::next@-1 (line 200)
+
+  0x00007fd84d07cc8c: mov     0x18(%rsi),%r10d  ;*getfield seed
+                                                ; - java.util.Random::next@1 (line 200)
+
+  0x00007fd84d07cc90: mov     0x10(%r10),%rax   ;*invokevirtual compareAndSwapLong
+                                                ; - java.util.concurrent.atomic.AtomicLong::compareAndSet@9 (line 147)
+                                                ; - java.util.Random::next@32 (line 204)
+                                                ; implicit exception: dispatches to 0x00007fd84d07ccfd
+  0x00007fd84d07cc94: movabs  $0xffffffffffff,%r11
+  0x00007fd84d07cc9e: movabs  $0x5deece66d,%r8
+  0x00007fd84d07cca8: mov     %rax,%r9
+  0x00007fd84d07ccab: imulq   %r8,%r9
+  0x00007fd84d07ccaf: add     $0xb,%r9
+  0x00007fd84d07ccb3: and     %r11,%r9          ;*land
+                                                ; - java.util.Random::next@24 (line 203)
+
+  0x00007fd84d07ccb6: cmpxchg %r9,0x10(%r10)
+  0x00007fd84d07ccbb: sete    %bpl
+  0x00007fd84d07ccbf: movzbl  %bpl,%ebp         ;*invokevirtual compareAndSwapLong
+                                                ; - java.util.concurrent.atomic.AtomicLong::compareAndSet@9 (line 147)
+                                                ; - java.util.Random::next@32 (line 204)
+
+  0x00007fd84d07ccc3: test    %ebp,%ebp
+  0x00007fd84d07ccc5: je      0x7fd84d07cce0    ;*ifeq
+                                                ; - java.util.Random::next@35 (line 204)
+
+  0x00007fd84d07ccc7: mov     $0x30,%ecx
+  0x00007fd84d07cccc: sub     %edx,%ecx
+  0x00007fd84d07ccce: shr     %cl,%r9
+  0x00007fd84d07ccd1: mov     %r9d,%eax         ;*l2i  ; - java.util.Random::next@45 (line 205)
+
+  0x00007fd84d07ccd4: add     $0x20,%rsp
+  0x00007fd84d07ccd8: pop     %rbp
+  0x00007fd84d07ccd9: test    %eax,0xa771321(%rip)  ;   {poll_return}
+  0x00007fd84d07ccdf: retq
+  0x00007fd84d07cce0: mov     $0xffffff65,%esi
+  0x00007fd84d07cce5: mov     %edx,(%rsp)
+  0x00007fd84d07cce8: mov     %r10d,0x4(%rsp)
+  0x00007fd84d07cced: mov     %r9,0x8(%rsp)
+  0x00007fd84d07ccf2: nop
+  0x00007fd84d07ccf3: callq   0x7fd84d0453e0    ; OopMap{[4]=NarrowOop off=152}
+                                                ;*ifeq
+                                                ; - java.util.Random::next@35 (line 204)
+                                                ;   {runtime_call}
+  0x00007fd84d07ccf8: callq   0x7fd8570e4dc0    ;*ifeq
+                                                ; - java.util.Random::next@35 (line 204)
+                                                ;   {runtime_call}
+  0x00007fd84d07ccfd: mov     $0xfffffff6,%esi
+  0x00007fd84d07cd02: nop
+  0x00007fd84d07cd03: callq   0x7fd84d0453e0    ; OopMap{off=168}
+                                                ;*invokevirtual get
+                                                ; - java.util.Random::next@8 (line 202)
+                                                ;   {runtime_call}
+  0x00007fd84d07cd08: callq   0x7fd8570e4dc0    ;*invokevirtual get
+                                                ; - java.util.Random::next@8 (line 202)
+                                                ;   {runtime_call}
+  0x00007fd84d07cd0d: hlt
+  0x00007fd84d07cd0e: hlt
+  0x00007fd84d07cd0f: hlt
+  0x00007fd84d07cd10: hlt
+  0x00007fd84d07cd11: hlt
+  0x00007fd84d07cd12: hlt
+  0x00007fd84d07cd13: hlt
+  0x00007fd84d07cd14: hlt
+  0x00007fd84d07cd15: hlt
+  0x00007fd84d07cd16: hlt
+  0x00007fd84d07cd17: hlt
+  0x00007fd84d07cd18: hlt
+  0x00007fd84d07cd19: hlt
+  0x00007fd84d07cd1a: hlt
+  0x00007fd84d07cd1b: hlt
+  0x00007fd84d07cd1c: hlt
+  0x00007fd84d07cd1d: hlt
+  0x00007fd84d07cd1e: hlt
+  0x00007fd84d07cd1f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007fd84d07cd20: jmpq    0x7fd84d06d260    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007fd84d07cd25: callq   0x7fd84d07cd2a
+  0x00007fd84d07cd2a: subq    $0x5,(%rsp)
+  0x00007fd84d07cd2f: jmpq    0x7fd84d047240    ;   {runtime_call}
+  0x00007fd84d07cd34: hlt
+  0x00007fd84d07cd35: hlt
+  0x00007fd84d07cd36: hlt
+  0x00007fd84d07cd37: hlt
+    119    6 %  b        org.my.SimpleProgram::main @ 37 (169 bytes)
+Decoding compiled method 0x00007fd84d07c0d0:
+Code:
+Argument 0 is unknown.RIP: 0x7fd84d07c240 Code size: 0x00000358
+[Entry Point]
+[Verified Entry Point]
+[Constants]
+  # {method} {0x00007fd855d1b628} 'main' '([Ljava/lang/String;)V' in 'org/my/SimpleProgram'
+  0x00007fd84d07c240: callq   0x7fd8570e4dc0    ;   {runtime_call}
+  0x00007fd84d07c245: nopw    0x0(%rax,%rax)
+  0x00007fd84d07c250: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007fd84d07c257: push    %rbp
+  0x00007fd84d07c258: sub     $0x50,%rsp
+  0x00007fd84d07c25c: mov     0x18(%rsi),%r13d
+  0x00007fd84d07c260: mov     0x30(%rsi),%r11d
+  0x00007fd84d07c264: mov     %r11d,0x2c(%rsp)
+  0x00007fd84d07c269: mov     0x40(%rsi),%rbx
+  0x00007fd84d07c26d: mov     0x28(%rsi),%rbp
+  0x00007fd84d07c271: mov     0x38(%rsi),%r10d
+  0x00007fd84d07c275: mov     %r10d,0x30(%rsp)
+  0x00007fd84d07c27a: mov     0x20(%rsi),%r14
+  0x00007fd84d07c27e: mov     %rsi,%rdi
+  0x00007fd84d07c281: movabs  $0x7fd857192b60,%r10
+  0x00007fd84d07c28b: callq   %r10
+  0x00007fd84d07c28e: test    %rbx,%rbx
+  0x00007fd84d07c291: je      0x7fd84d07c4de
+  0x00007fd84d07c297: mov     %rbx,%r8
+  0x00007fd84d07c29a: mov     0x8(%rbx),%r10d
+  0x00007fd84d07c29e: cmp     $0x200091ff,%r10d  ;   {metadata('java/util/Random')}
+  0x00007fd84d07c2a5: jne     0x7fd84d07c506
+  0x00007fd84d07c2ab: mov     %rbx,%r9
+  0x00007fd84d07c2ae: mov     %rbp,%r11
+  0x00007fd84d07c2b1: test    %rbp,%rbp
+  0x00007fd84d07c2b4: je      0x7fd84d07c4e9
+  0x00007fd84d07c2ba: mov     0x8(%rbp),%ecx
+  0x00007fd84d07c2bd: cmp     $0x2000016d,%ecx  ;   {metadata({type array int})}
+  0x00007fd84d07c2c3: jne     0x7fd84d07c509
+  0x00007fd84d07c2c9: mov     %rbp,%rbx
+  0x00007fd84d07c2cc: test    %r14,%r14
+  0x00007fd84d07c2cf: je      0x7fd84d07c4f0
+  0x00007fd84d07c2d5: mov     0x8(%r14),%r10d
+  0x00007fd84d07c2d9: cmp     $0x2000c081,%r10d  ;   {metadata('org/my/Iteration'[])}
+  0x00007fd84d07c2e0: jne     0x7fd84d07c509    ;*iload
+                                                ; - org.my.SimpleProgram::main@37 (line 41)
+
+  0x00007fd84d07c2e6: mov     0x18(%r9),%edi    ;*getfield seed
+                                                ; - java.util.Random::next@1 (line 200)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+                                                ; implicit exception: dispatches to 0x00007fd84d07c551
+  0x00007fd84d07c2ea: mov     0xc(%rbx),%ebp    ;*iastore
+                                                ; - org.my.SimpleProgram::main@52 (line 42)
+                                                ; implicit exception: dispatches to 0x00007fd84d07c551
+  0x00007fd84d07c2ed: cmp     $0x30d40,%r13d
+  0x00007fd84d07c2f4: jnl     0x7fd84d07c449    ;*if_icmpge
+                                                ; - org.my.SimpleProgram::main@41 (line 41)
+
+  0x00007fd84d07c2fa: mov     %r13d,%r8d
+  0x00007fd84d07c2fd: incl    %r8d
+  0x00007fd84d07c300: xor     %r11d,%r11d
+  0x00007fd84d07c303: cmp     %r11d,%r8d
+  0x00007fd84d07c306: cmovl   %r11d,%r8d
+  0x00007fd84d07c30a: mov     $0x30d40,%ecx
+  0x00007fd84d07c30f: cmp     %ecx,%r8d
+  0x00007fd84d07c312: cmovnle %ecx,%r8d
+  0x00007fd84d07c316: movabs  $0xffffffffffff,%r11
+  0x00007fd84d07c320: movabs  $0x5deece66d,%rsi  ;*iastore
+                                                ; - org.my.SimpleProgram::main@52 (line 42)
+
+  0x00007fd84d07c32a: mov     0x10(%rdi),%rax   ;*getfield value
+                                                ; - java.util.concurrent.atomic.AtomicLong::get@1 (line 105)
+                                                ; - java.util.Random::next@8 (line 202)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+                                                ; implicit exception: dispatches to 0x00007fd84d07c53f
+  0x00007fd84d07c32e: vmovq   %r14,%xmm0        ;*invokevirtual compareAndSwapLong
+                                                ; - java.util.concurrent.atomic.AtomicLong::compareAndSet@9 (line 147)
+                                                ; - java.util.Random::next@32 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c333: mov     %rax,%rdx
+  0x00007fd84d07c336: imulq   %rsi,%rdx
+  0x00007fd84d07c33a: add     $0xb,%rdx         ;*ladd
+                                                ; - java.util.Random::next@20 (line 203)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c33e: mov     %rdx,%r14
+  0x00007fd84d07c341: and     %r11,%r14         ;*land
+                                                ; - java.util.Random::next@24 (line 203)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c344: cmpxchg %r14,0x10(%rdi)
+  0x00007fd84d07c349: sete    %r10l
+  0x00007fd84d07c34d: movzbl  %r10l,%r10d       ;*invokevirtual compareAndSwapLong
+                                                ; - java.util.concurrent.atomic.AtomicLong::compareAndSet@9 (line 147)
+                                                ; - java.util.Random::next@32 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c351: test    %r10d,%r10d
+  0x00007fd84d07c354: je      0x7fd84d07c529    ;*ifeq
+                                                ; - java.util.Random::next@35 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c35a: shr     $0x10,%rdx
+  0x00007fd84d07c35e: mov     %edx,%r10d        ;*l2i  ; - java.util.Random::next@45 (line 205)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c361: cmp     %ebp,%r13d
+  0x00007fd84d07c364: jnb     0x7fd84d07c49d
+  0x00007fd84d07c36a: mov     %r10d,0x10(%rbx,%r13,4)  ;*goto
+                                                ; - org.my.SimpleProgram::main@56 (line 41)
+
+  0x00007fd84d07c36f: mov     0x18(%r9),%edi    ;*getfield seed
+                                                ; - java.util.Random::next@1 (line 200)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c373: mov     %r13d,%edx
+  0x00007fd84d07c376: incl    %edx              ;*iinc
+                                                ; - org.my.SimpleProgram::main@53 (line 41)
+
+  0x00007fd84d07c378: cmp     %r8d,%edx
+  0x00007fd84d07c37b: jnl     0x7fd84d07c387    ;*if_icmpge
+                                                ; - org.my.SimpleProgram::main@41 (line 41)
+
+  0x00007fd84d07c37d: mov     %edx,%r13d
+  0x00007fd84d07c380: vmovq   %xmm0,%r14
+  0x00007fd84d07c385: jmp     0x7fd84d07c32a
+  0x00007fd84d07c387: cmp     %ebp,%ecx
+  0x00007fd84d07c389: cmovnle %ebp,%ecx
+  0x00007fd84d07c38c: cmp     %ecx,%edx
+  0x00007fd84d07c38e: jnl     0x7fd84d07c4f8
+  0x00007fd84d07c394: jmp     0x7fd84d07c3a3
+  0x00007fd84d07c396: nopw    0x0(%rax,%rax)
+  0x00007fd84d07c3a0: mov     %r13d,%edx        ;*iastore
+                                                ; - org.my.SimpleProgram::main@52 (line 42)
+
+  0x00007fd84d07c3a3: mov     0x10(%rdi),%rax   ;*invokevirtual compareAndSwapLong
+                                                ; - java.util.concurrent.atomic.AtomicLong::compareAndSet@9 (line 147)
+                                                ; - java.util.Random::next@32 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+                                                ; implicit exception: dispatches to 0x00007fd84d07c53f
+  0x00007fd84d07c3a7: mov     %rax,%r8
+  0x00007fd84d07c3aa: imulq   %rsi,%r8
+  0x00007fd84d07c3ae: add     $0xb,%r8          ;*ladd
+                                                ; - java.util.Random::next@20 (line 203)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c3b2: mov     %r8,%r14
+  0x00007fd84d07c3b5: and     %r11,%r14         ;*land
+                                                ; - java.util.Random::next@24 (line 203)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c3b8: cmpxchg %r14,0x10(%rdi)
+  0x00007fd84d07c3bd: sete    %r10l
+  0x00007fd84d07c3c1: movzbl  %r10l,%r10d       ;*invokevirtual compareAndSwapLong
+                                                ; - java.util.concurrent.atomic.AtomicLong::compareAndSet@9 (line 147)
+                                                ; - java.util.Random::next@32 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c3c5: test    %r10d,%r10d
+  0x00007fd84d07c3c8: je      0x7fd84d07c469    ;*ifeq
+                                                ; - java.util.Random::next@35 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c3ce: mov     0x18(%r9),%edi    ;*getfield seed
+                                                ; - java.util.Random::next@1 (line 200)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c3d2: shr     $0x10,%r8
+  0x00007fd84d07c3d6: mov     %r8d,%r10d
+  0x00007fd84d07c3d9: mov     %r10d,0x10(%rbx,%rdx,4)  ;*goto
+                                                ; - org.my.SimpleProgram::main@56 (line 41)
+
+  0x00007fd84d07c3de: mov     %edx,%r13d
+  0x00007fd84d07c3e1: incl    %r13d             ;*iinc
+                                                ; - org.my.SimpleProgram::main@53 (line 41)
+
+  0x00007fd84d07c3e4: cmp     %ecx,%r13d
+  0x00007fd84d07c3e7: jl      0x7fd84d07c3a0    ;*if_icmpge
+                                                ; - org.my.SimpleProgram::main@41 (line 41)
+
+  0x00007fd84d07c3e9: cmp     $0x30d40,%r13d
+  0x00007fd84d07c3f0: jnl     0x7fd84d07c534
+  0x00007fd84d07c3f6: jmp     0x7fd84d07c3fc
+  0x00007fd84d07c3f8: mov     0x18(%r9),%edi    ;*iastore
+                                                ; - org.my.SimpleProgram::main@52 (line 42)
+
+  0x00007fd84d07c3fc: mov     0x10(%rdi),%rax   ;*invokevirtual compareAndSwapLong
+                                                ; - java.util.concurrent.atomic.AtomicLong::compareAndSet@9 (line 147)
+                                                ; - java.util.Random::next@32 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+                                                ; implicit exception: dispatches to 0x00007fd84d07c53f
+  0x00007fd84d07c400: mov     %rax,%r8
+  0x00007fd84d07c403: imulq   %rsi,%r8
+  0x00007fd84d07c407: add     $0xb,%r8          ;*ladd
+                                                ; - java.util.Random::next@20 (line 203)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c40b: mov     %r8,%r14
+  0x00007fd84d07c40e: and     %r11,%r14         ;*land
+                                                ; - java.util.Random::next@24 (line 203)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c411: cmpxchg %r14,0x10(%rdi)
+  0x00007fd84d07c416: sete    %r10l
+  0x00007fd84d07c41a: movzbl  %r10l,%r10d       ;*invokevirtual compareAndSwapLong
+                                                ; - java.util.concurrent.atomic.AtomicLong::compareAndSet@9 (line 147)
+                                                ; - java.util.Random::next@32 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c41e: test    %r10d,%r10d
+  0x00007fd84d07c421: je      0x7fd84d07c4d9    ;*ifeq
+                                                ; - java.util.Random::next@35 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c427: shr     $0x10,%r8
+  0x00007fd84d07c42b: mov     %r8d,%r10d        ;*l2i  ; - java.util.Random::next@45 (line 205)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c42e: cmp     %ebp,%r13d
+  0x00007fd84d07c431: jnb     0x7fd84d07c49d
+  0x00007fd84d07c433: mov     %r10d,0x10(%rbx,%r13,4)  ;*goto
+                                                ; - org.my.SimpleProgram::main@56 (line 41)
+
+  0x00007fd84d07c438: incl    %r13d
+  0x00007fd84d07c43b: cmp     $0x30d40,%r13d
+  0x00007fd84d07c442: jl      0x7fd84d07c3f8    ;*iinc
+                                                ; - org.my.SimpleProgram::main@53 (line 41)
+
+  0x00007fd84d07c444: vmovq   %xmm0,%r14        ;*if_icmpge
+                                                ; - org.my.SimpleProgram::main@41 (line 41)
+
+  0x00007fd84d07c449: mov     $0xffffff65,%esi
+  0x00007fd84d07c44e: mov     %r9,%rbp
+  0x00007fd84d07c451: mov     %rbx,(%rsp)
+  0x00007fd84d07c455: mov     %r13d,0xc(%rsp)
+  0x00007fd84d07c45a: mov     %r14,0x18(%rsp)
+  0x00007fd84d07c45f: callq   0x7fd84d0453e0    ; OopMap{rbp=Oop [0]=Oop [24]=Oop off=548}
+                                                ;*if_icmpge
+                                                ; - org.my.SimpleProgram::main@41 (line 41)
+                                                ;   {runtime_call}
+  0x00007fd84d07c464: callq   0x7fd8570e4dc0    ;*if_icmpge
+                                                ; - org.my.SimpleProgram::main@41 (line 41)
+                                                ;   {runtime_call}
+  0x00007fd84d07c469: mov     %rdi,%rbp         ;*getfield seed
+                                                ; - java.util.Random::next@1 (line 200)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c46c: mov     %edx,%r13d
+  0x00007fd84d07c46f: mov     $0xffffff65,%esi
+  0x00007fd84d07c474: mov     %r9,(%rsp)
+  0x00007fd84d07c478: mov     %rbx,0x18(%rsp)
+  0x00007fd84d07c47d: mov     %r13d,0x14(%rsp)
+  0x00007fd84d07c482: mov     %r14,0x20(%rsp)
+  0x00007fd84d07c487: mov     %r10d,0x28(%rsp)
+  0x00007fd84d07c48c: vmovsd  %xmm0,0x38(%rsp)
+  0x00007fd84d07c492: nop
+  0x00007fd84d07c493: callq   0x7fd84d0453e0    ; OopMap{rbp=Oop [0]=Oop [24]=Oop [56]=Oop off=600}
+                                                ;*ifeq
+                                                ; - java.util.Random::next@35 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+                                                ;   {runtime_call}
+  0x00007fd84d07c498: callq   0x7fd8570e4dc0    ;*ifeq
+                                                ; - java.util.Random::next@35 (line 204)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+                                                ;   {runtime_call}
+  0x00007fd84d07c49d: mov     $0xffffffe4,%esi
+  0x00007fd84d07c4a2: mov     %r9,%rbp
+  0x00007fd84d07c4a5: mov     %rbx,0x10(%rsp)
+  0x00007fd84d07c4aa: mov     %r13d,0xc(%rsp)
+  0x00007fd84d07c4af: mov     %r10d,0x18(%rsp)
+  0x00007fd84d07c4b4: mov     %rax,0xfffffffffffffff8(%rsp)
+  0x00007fd84d07c4b9: mov     0x2c(%rsp),%eax
+  0x00007fd84d07c4bd: mov     %eax,0x20(%rsp)
+  0x00007fd84d07c4c1: mov     0xfffffffffffffff8(%rsp),%rax
+  0x00007fd84d07c4c6: vmovsd  %xmm0,0x28(%rsp)
+  0x00007fd84d07c4cc: nop
+  0x00007fd84d07c4cf: callq   0x7fd84d0453e0    ; OopMap{rbp=Oop [16]=Oop [40]=Oop off=660}
+                                                ;*iastore
+                                                ; - org.my.SimpleProgram::main@52 (line 42)
+                                                ;   {runtime_call}
+  0x00007fd84d07c4d4: callq   0x7fd8570e4dc0    ;*iastore
+                                                ; - org.my.SimpleProgram::main@52 (line 42)
+                                                ;   {runtime_call}
+  0x00007fd84d07c4d9: mov     %rdi,%rbp         ;*getfield seed
+                                                ; - java.util.Random::next@1 (line 200)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c4dc: jmp     0x7fd84d07c46f
+  0x00007fd84d07c4de: xor     %r9d,%r9d
+  0x00007fd84d07c4e1: mov     %rbx,%r8
+  0x00007fd84d07c4e4: jmpq    0x7fd84d07c2ae
+  0x00007fd84d07c4e9: xor     %ebx,%ebx
+  0x00007fd84d07c4eb: jmpq    0x7fd84d07c2cc
+  0x00007fd84d07c4f0: xor     %r14d,%r14d
+  0x00007fd84d07c4f3: jmpq    0x7fd84d07c2e6
+  0x00007fd84d07c4f8: mov     %r13d,%r10d
+  0x00007fd84d07c4fb: mov     %edx,%r13d
+  0x00007fd84d07c4fe: mov     %r10d,%edx
+  0x00007fd84d07c501: jmpq    0x7fd84d07c3e9
+  0x00007fd84d07c506: mov     %rbp,%r11
+  0x00007fd84d07c509: mov     $0xffffff9d,%esi
+  0x00007fd84d07c50e: mov     %r13d,%ebp
+  0x00007fd84d07c511: mov     %r8,(%rsp)
+  0x00007fd84d07c515: mov     %r11,0x10(%rsp)
+  0x00007fd84d07c51a: mov     %r14,0x18(%rsp)
+  0x00007fd84d07c51f: callq   0x7fd84d0453e0    ; OopMap{[0]=Oop [16]=Oop [24]=Oop off=740}
+                                                ;*iload
+                                                ; - org.my.SimpleProgram::main@37 (line 41)
+                                                ;   {runtime_call}
+  0x00007fd84d07c524: callq   0x7fd8570e4dc0    ;*iload
+                                                ; - org.my.SimpleProgram::main@37 (line 41)
+                                                ;   {runtime_call}
+  0x00007fd84d07c529: mov     %rdi,%rbp         ;*getfield seed
+                                                ; - java.util.Random::next@1 (line 200)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+
+  0x00007fd84d07c52c: mov     %r13d,%edx
+  0x00007fd84d07c52f: jmpq    0x7fd84d07c46c
+  0x00007fd84d07c534: mov     %edx,%r13d
+  0x00007fd84d07c537: incl    %r13d             ;*iinc
+                                                ; - org.my.SimpleProgram::main@53 (line 41)
+
+  0x00007fd84d07c53a: jmpq    0x7fd84d07c444
+  0x00007fd84d07c53f: mov     $0xfffffff6,%esi
+  0x00007fd84d07c544: nop
+  0x00007fd84d07c547: callq   0x7fd84d0453e0    ; OopMap{off=780}
+                                                ;*invokevirtual get
+                                                ; - java.util.Random::next@8 (line 202)
+                                                ; - java.util.Random::nextInt@3 (line 329)
+                                                ; - org.my.SimpleProgram::main@49 (line 42)
+                                                ;   {runtime_call}
+  0x00007fd84d07c54c: callq   0x7fd8570e4dc0    ;   {runtime_call}
+  0x00007fd84d07c551: mov     $0xffffff86,%esi
+  0x00007fd84d07c556: mov     %r9,%rbp
+  0x00007fd84d07c559: mov     %rbx,(%rsp)
+  0x00007fd84d07c55d: mov     %r13d,0x8(%rsp)
+  0x00007fd84d07c562: mov     %r14,0x18(%rsp)
+  0x00007fd84d07c567: callq   0x7fd84d0453e0    ; OopMap{rbp=Oop [0]=Oop [24]=Oop off=812}
+                                                ;*iload
+                                                ; - org.my.SimpleProgram::main@37 (line 41)
+                                                ;   {runtime_call}
+  0x00007fd84d07c56c: callq   0x7fd8570e4dc0    ;*iload
+                                                ; - org.my.SimpleProgram::main@37 (line 41)
+                                                ;   {runtime_call}
+  0x00007fd84d07c571: hlt
+  0x00007fd84d07c572: hlt
+  0x00007fd84d07c573: hlt
+  0x00007fd84d07c574: hlt
+  0x00007fd84d07c575: hlt
+  0x00007fd84d07c576: hlt
+  0x00007fd84d07c577: hlt
+  0x00007fd84d07c578: hlt
+  0x00007fd84d07c579: hlt
+  0x00007fd84d07c57a: hlt
+  0x00007fd84d07c57b: hlt
+  0x00007fd84d07c57c: hlt
+  0x00007fd84d07c57d: hlt
+  0x00007fd84d07c57e: hlt
+  0x00007fd84d07c57f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007fd84d07c580: jmpq    0x7fd84d06d260    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007fd84d07c585: callq   0x7fd84d07c58a
+  0x00007fd84d07c58a: subq    $0x5,(%rsp)
+  0x00007fd84d07c58f: jmpq    0x7fd84d047240    ;   {runtime_call}
+  0x00007fd84d07c594: hlt
+  0x00007fd84d07c595: hlt
+  0x00007fd84d07c596: hlt
+  0x00007fd84d07c597: hlt
+    133    6 %           org.my.SimpleProgram::main @ -2 (169 bytes)   made not entrant
+    135    7 %  b        org.my.SimpleProgram::benchmark @ 11 (39 bytes)
+Decoding compiled method 0x00007fd84d07e850:
+Code:
+Argument 0 is unknown.RIP: 0x7fd84d07e9a0 Code size: 0x000000d8
+[Entry Point]
+[Verified Entry Point]
+[Constants]
+  # {method} {0x00007fd855d1b4c0} 'benchmark' '(Lorg/my/Iteration;I)V' in 'org/my/SimpleProgram'
+  0x00007fd84d07e9a0: callq   0x7fd8570e4dc0    ;   {runtime_call}
+  0x00007fd84d07e9a5: nopw    0x0(%rax,%rax)
+  0x00007fd84d07e9b0: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007fd84d07e9b7: push    %rbp
+  0x00007fd84d07e9b8: sub     $0x30,%rsp
+  0x00007fd84d07e9bc: mov     (%rsi),%rbx
+  0x00007fd84d07e9bf: mov     0x18(%rsi),%rbp
+  0x00007fd84d07e9c3: mov     0x10(%rsi),%r13d
+  0x00007fd84d07e9c7: mov     %rsi,%rdi
+  0x00007fd84d07e9ca: movabs  $0x7fd857192b60,%r10
+  0x00007fd84d07e9d4: callq   %r10
+  0x00007fd84d07e9d7: test    %rbp,%rbp
+  0x00007fd84d07e9da: je      0x7fd84d07ea41
+  0x00007fd84d07e9dc: mov     0x8(%rbp),%r11d
+  0x00007fd84d07e9e0: cmp     $0x2000c043,%r11d  ;   {metadata('org/my/Iteration')}
+  0x00007fd84d07e9e7: jne     0x7fd84d07ea45
+  0x00007fd84d07e9e9: movabs  $0xf0e71f20,%r11  ;   {oop(a 'java/lang/Class' = 'org/my/SimpleProgram')}
+  0x00007fd84d07e9f3: mov     0x6c(%r11),%r10d  ;*getstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@11 (line 19)
+
+  0x00007fd84d07e9f7: cmp     %r13d,%r10d
+  0x00007fd84d07e9fa: jnl     0x7fd84d07ea22    ;*if_icmpge
+                                                ; - org.my.SimpleProgram::benchmark@15 (line 19)
+
+  0x00007fd84d07e9fc: incl    %r10d             ;*iadd
+                                                ; - org.my.SimpleProgram::benchmark@22 (line 20)
+
+  0x00007fd84d07e9ff: mov     %r10d,0x6c(%r11)  ;*putstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@23 (line 20)
+
+  0x00007fd84d07ea03: jmp     0x7fd84d07ea17
+  0x00007fd84d07ea05: nopw    0x0(%rax,%rax)
+  0x00007fd84d07ea10: incl    %r10d             ;*iadd
+                                                ; - org.my.SimpleProgram::benchmark@22 (line 20)
+
+  0x00007fd84d07ea13: mov     %r10d,0x6c(%r11)  ; OopMap{r11=Oop rbp=Oop off=119}
+                                                ;*goto
+                                                ; - org.my.SimpleProgram::benchmark@26 (line 20)
+
+  0x00007fd84d07ea17: test    %eax,0xa76f5e3(%rip)  ;*goto
+                                                ; - org.my.SimpleProgram::benchmark@26 (line 20)
+                                                ;   {poll}
+  0x00007fd84d07ea1d: cmp     %r13d,%r10d
+  0x00007fd84d07ea20: jl      0x7fd84d07ea10    ;*if_icmpge
+                                                ; - org.my.SimpleProgram::benchmark@15 (line 19)
+
+  0x00007fd84d07ea22: mov     $0xffffff65,%esi
+  0x00007fd84d07ea27: mov     %rbx,0x8(%rsp)
+  0x00007fd84d07ea2c: mov     %r10d,0x4(%rsp)
+  0x00007fd84d07ea31: mov     %r13d,0x10(%rsp)
+  0x00007fd84d07ea36: nop
+  0x00007fd84d07ea37: callq   0x7fd84d0453e0    ; OopMap{rbp=Oop off=156}
+                                                ;*if_icmpge
+                                                ; - org.my.SimpleProgram::benchmark@15 (line 19)
+                                                ;   {runtime_call}
+  0x00007fd84d07ea3c: callq   0x7fd8570e4dc0    ;*if_icmpge
+                                                ; - org.my.SimpleProgram::benchmark@15 (line 19)
+                                                ;   {runtime_call}
+  0x00007fd84d07ea41: xor     %ebp,%ebp
+  0x00007fd84d07ea43: jmp     0x7fd84d07e9e9    ;*getstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@11 (line 19)
+
+  0x00007fd84d07ea45: mov     $0xffffff9d,%esi
+  0x00007fd84d07ea4a: mov     %r13d,(%rsp)
+  0x00007fd84d07ea4e: mov     %rbx,0x8(%rsp)
+  0x00007fd84d07ea53: callq   0x7fd84d0453e0    ; OopMap{rbp=Oop off=184}
+                                                ;*getstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@11 (line 19)
+                                                ;   {runtime_call}
+  0x00007fd84d07ea58: callq   0x7fd8570e4dc0    ;*getstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@11 (line 19)
+                                                ;   {runtime_call}
+  0x00007fd84d07ea5d: hlt
+  0x00007fd84d07ea5e: hlt
+  0x00007fd84d07ea5f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007fd84d07ea60: jmpq    0x7fd84d06d260    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007fd84d07ea65: callq   0x7fd84d07ea6a
+  0x00007fd84d07ea6a: subq    $0x5,(%rsp)
+  0x00007fd84d07ea6f: jmpq    0x7fd84d047240    ;   {runtime_call}
+  0x00007fd84d07ea74: hlt
+  0x00007fd84d07ea75: hlt
+  0x00007fd84d07ea76: hlt
+  0x00007fd84d07ea77: hlt
+    146    7 %           org.my.SimpleProgram::benchmark @ -2 (39 bytes)   made not entrant
+    146    8    b        org.my.SimpleProgram::benchmark (39 bytes)
+Decoding compiled method 0x00007fd84d07e410:
+Code:
+Argument 0 is unknown.RIP: 0x7fd84d07e560 Code size: 0x000000f8
+[Entry Point]
+[Verified Entry Point]
+[Constants]
+  # {method} {0x00007fd855d1b4c0} 'benchmark' '(Lorg/my/Iteration;I)V' in 'org/my/SimpleProgram'
+  # parm0:    rsi:rsi   = 'org/my/Iteration'
+  # parm1:    rdx       = int
+  #           [sp+0x20]  (sp of caller)
+  0x00007fd84d07e560: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007fd84d07e567: push    %rbp
+  0x00007fd84d07e568: sub     $0x10,%rsp        ;*synchronization entry
+                                                ; - org.my.SimpleProgram::benchmark@-1 (line 17)
+
+  0x00007fd84d07e56c: mov     %edx,%ebp
+  0x00007fd84d07e56e: mov     %rsi,%rbx
+  0x00007fd84d07e571: movabs  $0x7fd8570e5e60,%r10
+  0x00007fd84d07e57b: callq   %r10
+  0x00007fd84d07e57e: mov     %rbx,%r13
+  0x00007fd84d07e581: test    %rbx,%rbx
+  0x00007fd84d07e584: je      0x7fd84d07e628
+  0x00007fd84d07e58a: mov     %rax,0x10(%rbx)   ;*invokestatic currentTimeMillis
+                                                ; - org.my.SimpleProgram::benchmark@1 (line 17)
+
+  0x00007fd84d07e58e: movabs  $0x7fd8570e6060,%r10
+  0x00007fd84d07e598: callq   %r10              ;*invokestatic nanoTime
+                                                ; - org.my.SimpleProgram::benchmark@7 (line 18)
+
+  0x00007fd84d07e59b: mov     %rax,%rbx
+  0x00007fd84d07e59e: movabs  $0xf0e71f20,%r10  ;   {oop(a 'java/lang/Class' = 'org/my/SimpleProgram')}
+  0x00007fd84d07e5a8: mov     0x6c(%r10),%r11d  ;*getstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@11 (line 19)
+
+  0x00007fd84d07e5ac: cmp     %ebp,%r11d
+  0x00007fd84d07e5af: jnl     0x7fd84d07e608    ;*if_icmpge
+                                                ; - org.my.SimpleProgram::benchmark@15 (line 19)
+
+  0x00007fd84d07e5b1: mov     %r11d,%r8d
+  0x00007fd84d07e5b4: incl    %r8d              ;*getstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@18 (line 20)
+
+  0x00007fd84d07e5b7: incl    %r11d             ;*iadd
+                                                ; - org.my.SimpleProgram::benchmark@22 (line 20)
+
+  0x00007fd84d07e5ba: mov     %r11d,0x6c(%r10)  ;*putstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@23 (line 20)
+
+  0x00007fd84d07e5be: cmp     %r8d,%r11d
+  0x00007fd84d07e5c1: jl      0x7fd84d07e5b7    ;*if_icmpge
+                                                ; - org.my.SimpleProgram::benchmark@15 (line 19)
+
+  0x00007fd84d07e5c3: mov     %ebp,%r8d
+  0x00007fd84d07e5c6: add     $0xfffffff1,%r8d
+  0x00007fd84d07e5ca: mov     $0x80000000,%r9d
+  0x00007fd84d07e5d0: cmp     %r8d,%ebp
+  0x00007fd84d07e5d3: cmovl   %r9d,%r8d
+  0x00007fd84d07e5d7: cmp     %r8d,%r11d
+  0x00007fd84d07e5da: jnl     0x7fd84d07e5f7
+  0x00007fd84d07e5dc: nopl    0x0(%rax)         ;*getstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@18 (line 20)
+
+  0x00007fd84d07e5e0: mov     %r11d,%ecx
+  0x00007fd84d07e5e3: add     $0xf,%ecx
+  0x00007fd84d07e5e6: mov     %ecx,0x6c(%r10)   ;*putstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@23 (line 20)
+
+  0x00007fd84d07e5ea: add     $0x10,%r11d       ;*iadd
+                                                ; - org.my.SimpleProgram::benchmark@22 (line 20)
+
+  0x00007fd84d07e5ee: mov     %r11d,0x6c(%r10)  ;*putstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@23 (line 20)
+
+  0x00007fd84d07e5f2: cmp     %r8d,%r11d
+  0x00007fd84d07e5f5: jl      0x7fd84d07e5e0    ;*if_icmpge
+                                                ; - org.my.SimpleProgram::benchmark@15 (line 19)
+
+  0x00007fd84d07e5f7: cmp     %ebp,%r11d
+  0x00007fd84d07e5fa: jnl     0x7fd84d07e608    ;*getstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@18 (line 20)
+
+  0x00007fd84d07e5fc: incl    %r11d             ;*iadd
+                                                ; - org.my.SimpleProgram::benchmark@22 (line 20)
+
+  0x00007fd84d07e5ff: mov     %r11d,0x6c(%r10)  ;*putstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@23 (line 20)
+
+  0x00007fd84d07e603: cmp     %ebp,%r11d
+  0x00007fd84d07e606: jl      0x7fd84d07e5fc    ;*if_icmpge
+                                                ; - org.my.SimpleProgram::benchmark@15 (line 19)
+
+  0x00007fd84d07e608: movabs  $0x7fd8570e6060,%r10
+  0x00007fd84d07e612: callq   %r10              ;*invokestatic nanoTime
+                                                ; - org.my.SimpleProgram::benchmark@30 (line 31)
+
+  0x00007fd84d07e615: sub     %rbx,%rax
+  0x00007fd84d07e618: mov     %rax,0x18(%r13)   ;*synchronization entry
+                                                ; - org.my.SimpleProgram::benchmark@-1 (line 17)
+
+  0x00007fd84d07e61c: add     $0x10,%rsp
+  0x00007fd84d07e620: pop     %rbp
+  0x00007fd84d07e621: test    %eax,0xa76f9d9(%rip)  ;   {poll_return}
+  0x00007fd84d07e627: retq
+  0x00007fd84d07e628: mov     $0xfffffff6,%esi
+  0x00007fd84d07e62d: mov     %rax,%rbp
+  0x00007fd84d07e630: nop
+  0x00007fd84d07e633: callq   0x7fd84d0453e0    ; OopMap{off=216}
+                                                ;*putfield startTimeMs
+                                                ; - org.my.SimpleProgram::benchmark@4 (line 17)
+                                                ;   {runtime_call}
+  0x00007fd84d07e638: callq   0x7fd8570e4dc0    ;*getstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@18 (line 20)
+                                                ;   {runtime_call}
+  0x00007fd84d07e63d: hlt
+  0x00007fd84d07e63e: hlt
+  0x00007fd84d07e63f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007fd84d07e640: jmpq    0x7fd84d06d260    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007fd84d07e645: callq   0x7fd84d07e64a
+  0x00007fd84d07e64a: subq    $0x5,(%rsp)
+  0x00007fd84d07e64f: jmpq    0x7fd84d047240    ;   {runtime_call}
+  0x00007fd84d07e654: hlt
+  0x00007fd84d07e655: hlt
+  0x00007fd84d07e656: hlt
+  0x00007fd84d07e657: hlt
+    155    9 %  b        org.my.SimpleProgram::benchmark @ 11 (39 bytes)
+Decoding compiled method 0x00007fd84d07dfd0:
+Code:
+Argument 0 is unknown.RIP: 0x7fd84d07e120 Code size: 0x000000f8
+[Entry Point]
+[Verified Entry Point]
+[Constants]
+  # {method} {0x00007fd855d1b4c0} 'benchmark' '(Lorg/my/Iteration;I)V' in 'org/my/SimpleProgram'
+  0x00007fd84d07e120: callq   0x7fd8570e4dc0    ;   {runtime_call}
+  0x00007fd84d07e125: nopw    0x0(%rax,%rax)
+  0x00007fd84d07e130: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007fd84d07e137: push    %rbp
+  0x00007fd84d07e138: sub     $0x20,%rsp
+  0x00007fd84d07e13c: mov     (%rsi),%rbx
+  0x00007fd84d07e13f: mov     0x18(%rsi),%r13
+  0x00007fd84d07e143: mov     0x10(%rsi),%ebp
+  0x00007fd84d07e146: mov     %rsi,%rdi
+  0x00007fd84d07e149: movabs  $0x7fd857192b60,%r10
+  0x00007fd84d07e153: callq   %r10
+  0x00007fd84d07e156: test    %r13,%r13
+  0x00007fd84d07e159: je      0x7fd84d07e1c2
+  0x00007fd84d07e15b: mov     0x8(%r13),%r10d
+  0x00007fd84d07e15f: cmp     $0x2000c043,%r10d  ;   {metadata('org/my/Iteration')}
+  0x00007fd84d07e166: jne     0x7fd84d07e1c7
+  0x00007fd84d07e168: movabs  $0xf0e71f20,%r10  ;   {oop(a 'java/lang/Class' = 'org/my/SimpleProgram')}
+  0x00007fd84d07e172: mov     0x6c(%r10),%r11d  ;*getstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@11 (line 19)
+
+  0x00007fd84d07e176: cmp     %ebp,%r11d
+  0x00007fd84d07e179: jnl     0x7fd84d07e1a2    ;*if_icmpge
+                                                ; - org.my.SimpleProgram::benchmark@15 (line 19)
+
+  0x00007fd84d07e17b: incl    %r11d             ;*iadd
+                                                ; - org.my.SimpleProgram::benchmark@22 (line 20)
+
+  0x00007fd84d07e17e: mov     %r11d,0x6c(%r10)  ;*putstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@23 (line 20)
+
+  0x00007fd84d07e182: jmp     0x7fd84d07e197
+  0x00007fd84d07e184: nopl    0x0(%rax,%rax)
+  0x00007fd84d07e18c: nop
+  0x00007fd84d07e190: incl    %r11d             ;*iadd
+                                                ; - org.my.SimpleProgram::benchmark@22 (line 20)
+
+  0x00007fd84d07e193: mov     %r11d,0x6c(%r10)  ; OopMap{r10=Oop r13=Oop off=119}
+                                                ;*goto
+                                                ; - org.my.SimpleProgram::benchmark@26 (line 20)
+
+  0x00007fd84d07e197: test    %eax,0xa76fe63(%rip)  ;*goto
+                                                ; - org.my.SimpleProgram::benchmark@26 (line 20)
+                                                ;   {poll}
+  0x00007fd84d07e19d: cmp     %ebp,%r11d
+  0x00007fd84d07e1a0: jl      0x7fd84d07e190    ;*if_icmpge
+                                                ; - org.my.SimpleProgram::benchmark@15 (line 19)
+
+  0x00007fd84d07e1a2: movabs  $0x7fd8570e6060,%r10
+  0x00007fd84d07e1ac: callq   %r10              ;*invokestatic nanoTime
+                                                ; - org.my.SimpleProgram::benchmark@30 (line 31)
+
+  0x00007fd84d07e1af: sub     %rbx,%rax         ;*lsub
+                                                ; - org.my.SimpleProgram::benchmark@34 (line 31)
+
+  0x00007fd84d07e1b2: mov     %rax,0x18(%r13)   ; implicit exception: dispatches to 0x00007fd84d07e1e1
+  0x00007fd84d07e1b6: add     $0x20,%rsp
+  0x00007fd84d07e1ba: pop     %rbp
+  0x00007fd84d07e1bb: test    %eax,0xa76fe3f(%rip)  ;   {poll_return}
+  0x00007fd84d07e1c1: retq
+  0x00007fd84d07e1c2: xor     %r13d,%r13d
+  0x00007fd84d07e1c5: jmp     0x7fd84d07e168    ;*getstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@11 (line 19)
+
+  0x00007fd84d07e1c7: mov     $0xffffff9d,%esi
+  0x00007fd84d07e1cc: mov     %r13,(%rsp)
+  0x00007fd84d07e1d0: mov     %rbx,0x8(%rsp)
+  0x00007fd84d07e1d5: nop
+  0x00007fd84d07e1d7: callq   0x7fd84d0453e0    ; OopMap{[0]=Oop off=188}
+                                                ;*getstatic counter
+                                                ; - org.my.SimpleProgram::benchmark@11 (line 19)
+                                                ;   {runtime_call}
+  0x00007fd84d07e1dc: callq   0x7fd8570e4dc0    ;*putfield durationNs
+                                                ; - org.my.SimpleProgram::benchmark@35 (line 31)
+                                                ;   {runtime_call}
+  0x00007fd84d07e1e1: mov     $0xfffffff6,%esi
+  0x00007fd84d07e1e6: mov     %rax,%rbp
+  0x00007fd84d07e1e9: nop
+  0x00007fd84d07e1eb: callq   0x7fd84d0453e0    ; OopMap{off=208}
+                                                ;*putfield durationNs
+                                                ; - org.my.SimpleProgram::benchmark@35 (line 31)
+                                                ;   {runtime_call}
+  0x00007fd84d07e1f0: callq   0x7fd8570e4dc0    ;*putfield durationNs
+                                                ; - org.my.SimpleProgram::benchmark@35 (line 31)
+                                                ;   {runtime_call}
+  0x00007fd84d07e1f5: hlt
+  0x00007fd84d07e1f6: hlt
+  0x00007fd84d07e1f7: hlt
+  0x00007fd84d07e1f8: hlt
+  0x00007fd84d07e1f9: hlt
+  0x00007fd84d07e1fa: hlt
+  0x00007fd84d07e1fb: hlt
+  0x00007fd84d07e1fc: hlt
+  0x00007fd84d07e1fd: hlt
+  0x00007fd84d07e1fe: hlt
+  0x00007fd84d07e1ff: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007fd84d07e200: jmpq    0x7fd84d06d260    ;   {no_reloc}
+[Deopt Handler Code]
+  0x00007fd84d07e205: callq   0x7fd84d07e20a
+  0x00007fd84d07e20a: subq    $0x5,(%rsp)
+  0x00007fd84d07e20f: jmpq    0x7fd84d047240    ;   {runtime_call}
+  0x00007fd84d07e214: hlt
+  0x00007fd84d07e215: hlt
+  0x00007fd84d07e216: hlt
+  0x00007fd84d07e217: hlt
+11552711
+11483089
+467260
+464322
+464427
+467216
+464421
+466757
+464034
+474596
+10000000

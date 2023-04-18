@@ -1,0 +1,136 @@
+[class path: java.lang.Object.class:]
+javassist.CtClassType@5ef04b5[public class org.mybyteman.BufferWriter fields=org.mybyteman.BufferWriter.bufMap:[Ljava/nio/ByteBuffer;, org.mybyteman.BufferWriter.readWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;, org.mybyteman.BufferWriter.readLock:Ljava/util/concurrent/locks/Lock;, org.mybyteman.BufferWriter.writeLock:Ljava/util/concurrent/locks/Lock;,  constructors=javassist.CtConstructor@3f8f9dd6[public BufferWriter ()V], javassist.CtConstructor@aec6354[static <clinit> ()V],  methods=javassist.CtMethod@c5c4ddb9[public static put (I)V], javassist.CtMethod@ed3dc06e[public static print ()V], ]
+total_time:3704
+489, 
+361, 
+357, 
+357, 
+357, 
+356, 
+357, 
+356, 
+356, 
+357, 
+total
+remaining cap: 1024
+99999999
+100000000
+[class path: java.lang.Object.class:]
+javassist.CtClassType@5ef04b5[public class org.mybyteman.BufferWriter fields=org.mybyteman.BufferWriter.bufMap:[Ljava/nio/ByteBuffer;, org.mybyteman.BufferWriter.readWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;, org.mybyteman.BufferWriter.readLock:Ljava/util/concurrent/locks/Lock;, org.mybyteman.BufferWriter.writeLock:Ljava/util/concurrent/locks/Lock;,  constructors=javassist.CtConstructor@3f8f9dd6[public BufferWriter ()V], javassist.CtConstructor@aec6354[static <clinit> ()V],  methods=javassist.CtMethod@c5c4ddb9[public static put (I)V], javassist.CtMethod@ed3dc06e[public static print ()V], ]
+total_time:48029
+4965, 5188, 
+5363, 4906, 
+5085, 4659, 
+4794, 4780, 
+4755, 4776, 
+4678, 4706, 
+4713, 4738, 
+4841, 4801, 
+4647, 4810, 
+4187, 4631, 
+total
+remaining cap: 1024
+199999999
+200000000
+[class path: java.lang.Object.class:]
+javassist.CtClassType@5ef04b5[public class org.mybyteman.BufferWriter fields=org.mybyteman.BufferWriter.bufMap:[Ljava/nio/ByteBuffer;, org.mybyteman.BufferWriter.readWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;, org.mybyteman.BufferWriter.readLock:Ljava/util/concurrent/locks/Lock;, org.mybyteman.BufferWriter.writeLock:Ljava/util/concurrent/locks/Lock;,  constructors=javassist.CtConstructor@3f8f9dd6[public BufferWriter ()V], javassist.CtConstructor@aec6354[static <clinit> ()V],  methods=javassist.CtMethod@c5c4ddb9[public static put (I)V], javassist.CtMethod@ed3dc06e[public static print ()V], ]
+total_time:20148
+2026, 1911, 2225, 
+1762, 2274, 2033, 
+1752, 1706, 2015, 
+1826, 1741, 1971, 
+2347, 2268, 2509, 
+2324, 2216, 2043, 
+1817, 1667, 2079, 
+1793, 1692, 2074, 
+1752, 1640, 2623, 
+2409, 1647, 575, 
+total
+remaining cap: 1024
+299999999
+300000000
+[class path: java.lang.Object.class:]
+javassist.CtClassType@5ef04b5[public class org.mybyteman.BufferWriter fields=org.mybyteman.BufferWriter.bufMap:[Ljava/nio/ByteBuffer;, org.mybyteman.BufferWriter.readWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;, org.mybyteman.BufferWriter.readLock:Ljava/util/concurrent/locks/Lock;, org.mybyteman.BufferWriter.writeLock:Ljava/util/concurrent/locks/Lock;,  constructors=javassist.CtConstructor@3f8f9dd6[public BufferWriter ()V], javassist.CtConstructor@aec6354[static <clinit> ()V],  methods=javassist.CtMethod@c5c4ddb9[public static put (I)V], javassist.CtMethod@ed3dc06e[public static print ()V], ]
+total_time:24504
+3205, 2284, 2437, 2468, 
+2584, 2779, 2413, 2434, 
+2538, 2125, 2411, 2434, 
+2630, 2101, 2380, 2427, 
+2534, 2136, 2394, 2417, 
+2507, 2141, 2416, 2485, 
+2553, 2123, 2386, 2452, 
+2534, 2165, 2330, 2430, 
+2246, 2177, 2367, 2364, 
+1173, 2412, 2053, 2337, 
+total
+remaining cap: 1024
+399999999
+400000000
+[class path: java.lang.Object.class:]
+javassist.CtClassType@5ef04b5[public class org.mybyteman.BufferWriter fields=org.mybyteman.BufferWriter.bufMap:[Ljava/nio/ByteBuffer;, org.mybyteman.BufferWriter.readWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;, org.mybyteman.BufferWriter.readLock:Ljava/util/concurrent/locks/Lock;, org.mybyteman.BufferWriter.writeLock:Ljava/util/concurrent/locks/Lock;,  constructors=javassist.CtConstructor@3f8f9dd6[public BufferWriter ()V], javassist.CtConstructor@aec6354[static <clinit> ()V],  methods=javassist.CtMethod@c5c4ddb9[public static put (I)V], javassist.CtMethod@ed3dc06e[public static print ()V], ]
+total_time:33210
+3305, 3078, 3450, 3766, 2844, 
+3144, 3031, 3590, 2906, 3755, 
+3293, 2993, 3470, 2882, 3013, 
+3267, 3099, 3555, 2927, 3030, 
+3410, 3011, 3502, 2958, 2966, 
+3222, 3032, 3540, 3007, 3020, 
+3345, 3009, 3428, 2866, 3037, 
+3237, 3351, 3430, 3121, 3339, 
+3294, 3377, 3211, 3147, 3377, 
+3525, 3180, 2033, 3249, 3078, 
+total
+remaining cap: 1024
+499999999
+500000000
+[class path: java.lang.Object.class:]
+javassist.CtClassType@5ef04b5[public class org.mybyteman.BufferWriter fields=org.mybyteman.BufferWriter.bufMap:[Ljava/nio/ByteBuffer;, org.mybyteman.BufferWriter.readWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;, org.mybyteman.BufferWriter.readLock:Ljava/util/concurrent/locks/Lock;, org.mybyteman.BufferWriter.writeLock:Ljava/util/concurrent/locks/Lock;,  constructors=javassist.CtConstructor@3f8f9dd6[public BufferWriter ()V], javassist.CtConstructor@aec6354[static <clinit> ()V],  methods=javassist.CtMethod@c5c4ddb9[public static put (I)V], javassist.CtMethod@ed3dc06e[public static print ()V], ]
+total_time:39211
+4148, 3551, 4009, 3689, 3795, 3852, 
+4087, 4530, 3966, 3666, 3778, 3787, 
+4184, 3581, 3908, 3647, 3682, 3886, 
+4134, 3598, 3970, 3671, 3718, 3814, 
+4082, 3555, 3934, 3671, 3762, 3919, 
+3752, 4112, 3776, 3762, 3792, 4238, 
+3772, 4703, 4906, 4746, 4646, 4681, 
+3872, 3591, 3867, 3818, 3777, 3722, 
+3818, 3734, 3843, 3780, 3737, 3854, 
+3349, 3621, 3031, 3737, 3724, 3249, 
+total
+remaining cap: 1024
+599999999
+600000000
+[class path: java.lang.Object.class:]
+javassist.CtClassType@5ef04b5[public class org.mybyteman.BufferWriter fields=org.mybyteman.BufferWriter.bufMap:[Ljava/nio/ByteBuffer;, org.mybyteman.BufferWriter.readWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;, org.mybyteman.BufferWriter.readLock:Ljava/util/concurrent/locks/Lock;, org.mybyteman.BufferWriter.writeLock:Ljava/util/concurrent/locks/Lock;,  constructors=javassist.CtConstructor@3f8f9dd6[public BufferWriter ()V], javassist.CtConstructor@aec6354[static <clinit> ()V],  methods=javassist.CtMethod@c5c4ddb9[public static put (I)V], javassist.CtMethod@ed3dc06e[public static print ()V], ]
+total_time:44680
+4134, 4483, 4392, 4205, 4301, 4601, 5153, 
+5331, 4436, 4343, 4093, 4202, 4476, 4308, 
+4044, 4499, 4521, 4008, 4292, 4479, 4449, 
+4083, 4454, 4471, 4167, 4079, 4502, 4540, 
+4215, 4442, 4398, 4054, 4329, 4521, 4482, 
+4481, 4480, 4502, 4461, 4439, 4511, 4425, 
+4581, 4392, 4460, 4442, 4490, 4501, 4414, 
+4567, 4409, 4448, 4418, 4518, 4524, 4412, 
+4474, 4466, 4493, 4464, 4353, 4517, 4428, 
+4183, 4021, 4056, 4515, 4408, 4046, 4064, 
+total
+remaining cap: 1024
+699999999
+700000000
+[class path: java.lang.Object.class:]
+javassist.CtClassType@5ef04b5[public class org.mybyteman.BufferWriter fields=org.mybyteman.BufferWriter.bufMap:[Ljava/nio/ByteBuffer;, org.mybyteman.BufferWriter.readWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;, org.mybyteman.BufferWriter.readLock:Ljava/util/concurrent/locks/Lock;, org.mybyteman.BufferWriter.writeLock:Ljava/util/concurrent/locks/Lock;,  constructors=javassist.CtConstructor@3f8f9dd6[public BufferWriter ()V], javassist.CtConstructor@aec6354[static <clinit> ()V],  methods=javassist.CtMethod@c5c4ddb9[public static put (I)V], javassist.CtMethod@ed3dc06e[public static print ()V], ]
+total_time:51470
+4652, 5498, 4997, 5121, 4830, 5276, 4483, 5167, 
+4847, 5367, 4977, 5047, 4986, 5162, 5986, 5239, 
+4793, 6627, 4887, 4775, 5063, 6469, 6026, 5142, 
+5862, 5388, 6127, 4948, 6145, 5115, 4459, 5201, 
+4737, 5197, 5009, 4756, 4796, 5018, 4566, 5243, 
+5024, 4993, 4894, 5040, 4968, 4882, 4984, 4933, 
+5109, 4927, 4983, 5090, 5009, 4871, 4908, 4940, 
+4995, 4938, 4913, 5061, 4938, 4903, 4941, 5003, 
+5078, 5016, 4973, 5099, 4970, 4960, 5040, 4946, 
+5071, 3518, 4767, 5057, 4742, 4746, 4888, 4730, 
+total
+remaining cap: 1024
+799999999
+800000000

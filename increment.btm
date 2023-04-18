@@ -1,0 +1,11 @@
+
+RULE incrementCounter2
+CLASS org.my.SimpleProgram
+METHOD benchmark
+COMPILE
+AT LINE 19
+
+BIND count:int = org.my.SimpleProgram.counter
+IF TRUE
+DO org.my.SimpleProgram.counter = org.my.SimpleProgram.counter + 1
+ENDRULE
